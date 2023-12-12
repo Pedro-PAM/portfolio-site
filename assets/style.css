@@ -1,0 +1,140 @@
+body{
+    background-image: url("./img/istockphoto-1302189748-612x612.png");
+    background-color: #cccccc;
+    background-position: center;
+    background-size:cover;
+    width:100%;
+    background-repeat:repeat;    
+}
+.about-me{    
+    display:flex;
+    flex-direction: column;   
+    height:100vh;    
+    overflow:visible;    
+    animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+.my-projects{
+    
+    margin-top:200px;
+    margin-left:45%;    
+    color:#000000;
+    border: 2px solid;
+    border-color:#7fffd4;
+    border-radius:96px;
+    width: 200px;    
+    height:100px;
+    background-color:#7ffbff
+    
+}
+.my-projects:hover{
+    background-color: transparent;
+    color:#ffffff;
+    cursor:pointer;
+}
+.desc{    
+    margin-top:300px;
+    margin-left:50px;
+    color: #ffffff;
+    font-size:2.7rem;
+}
+.profile-pic{
+    margin-top:250px;
+    position: absolute;
+    margin-left:70%;
+    height:200px;
+    width:200px;
+    border-radius:480px;
+    
+}
+
+.projects{
+    display:none;
+    height:100vh;    
+    flex-wrap:wrap;
+    align-content: center;
+}
+.projects::after{
+    animation: fadeIn 3s;
+}
+.tech-desc{  
+    width:30%;
+    margin-left:50px;
+    color: #ffffff;
+    font-size:1.6rem;    
+}
+
+.portfolio{
+    margin-left:40%;
+    display:flex;
+}
+
+.contact{    
+    height:100vh;
+    animation: fadeIn 3s;
+}
+
+.contact-info,.contact-links{    
+    color: #ffffff;
+    font-size:1.6rem;     
+}
+
+.contact-info{
+    margin-left:50px;
+}
+.contact-links{
+    margin-top:50px;
+    margin-left:50px;
+    align-items: flex-start;
+    list-style: none;
+}
+
+.noscroll{
+    position:fixed;
+}
+
+.slidePortfolio{ 
+    width: 40%; 
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 20%;
+}
+
+.hide{
+    display:none;
+}
+
+.display-left,.display-right{
+    position:relative;
+    color: #000000;
+    margin-top: 400px;
+    right:300px;
+    border: 2px solid;
+    border-color: #7fffd4;
+    border-radius:76px;
+    background-color: #7ffbff;
+    width: 100px;
+    height: 100px;
+    
+}
+
+.display-left:hover,.display-right:hover{
+    background-color: transparent;
+}
+
+a{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+a:hover{
+    text-decoration:underline;
+}
