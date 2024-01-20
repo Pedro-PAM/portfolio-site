@@ -1,7 +1,5 @@
 <?php
 if (isset($_POST['Email'])) {
-
-    
     $email_to = "pedropamrj@gmail.com";
     $email_subject = "Novo Contato";
 
@@ -20,7 +18,7 @@ if (isset($_POST['Email'])) {
         !isset($_POST['Email']) ||
         !isset($_POST['Message'])
     ) {
-        problem('We're sorry, but there appears to be a problem with the form you submitted.');
+        problem("We're sorry, but there appears to be a problem with the form you submitted.");
     }
 
     $name = $_POST['Name']; // required
@@ -41,7 +39,7 @@ if (isset($_POST['Email'])) {
     }
 
     if (strlen($message) < 2) {
-        $error_message .= 'The Message you entered do not appear to be valid.<br>';
+        $error_message .= 'The Message you entered does not appear to be valid.<br>';
     }
 
     if (strlen($error_message) > 0) {
@@ -64,13 +62,14 @@ if (isset($_POST['Email'])) {
     $headers = 'From: ' . $email . "\r\n" .
         'Reply-To: ' . $email . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
+    
     @mail($email_to, $email_subject, $email_message, $headers);
-?>
+    ?>
 
     <!-- INCLUDE YOUR SUCCESS MESSAGE BELOW -->
 
-    Obrigado por entrar em contato. Responderei-lhe em breve!
-
-<?php
+    Obrigado por entrar em contato!
+    
+    <?php
 }
 ?>
