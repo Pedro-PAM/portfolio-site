@@ -1,51 +1,272 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifólio</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"defer></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+
     <script src="./assets/index.js" defer></script>
-    <title>Pedro Paulo de Almeida Marinho</title>
     
-</head>
+  </head>
+  <body>
+    <header class="header">
+      <a href="https://www.linkedin.com/in/pedropam/" class="logo">Pedro Paulo de Almeida Marinho</a>
+      <i class="bx bx-menu" id="menu-icon"></i>
 
-<body>
-    <div class="about-me">
-        <span class="desc">Olá, sejam bem vindos ao meu site!<hr>Eu sou Pedro, um desenvolvedor nativo do <hr> Brasil - Rio de Janeiro<hr>Conheça mais sobre mim!</span>        
-        <img class="profile-pic" src="./assets/img/foto2.jpg" alt="Minha Foto">
-        <button type="button" class="my-projects">Meus Projetos</button>
-    </div>
-    <div class="projects">
-        <span class="tech-desc">Com o quê eu trabalho? <hr>Atualmente estou focando no desenvolvimendo web, desenvolvendo projetos utilizando javascript e frameworks como react e angular.
-            Veja alguns dos meus projetos ao lado:<hr>Clique na imagem para visitar o projeto.</span>        
-        </span>
-        <span class="portfolio">           
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">Sobre mim</a>
+        <a href="#services">Serviços</a>
+        <a href="#portfolio">Projetos</a>
+        <a href="#certificados">Certificados</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </header>
 
-                <a href="https://projeto-movimente-se.vercel.app" target="_blank"><img class="slidePortfolio" src="./assets/img/movimente-se.png" alt="Projeto Instituto Movimente-se"></a>
-                <a href="https://pedro-pam.github.io/js-yugioh-assets/" target="_blank"><img class="slidePortfolio" src="./assets/img/yu-gi-oh.png" alt="Jogo de Yu-Gi-Oh Online"></a>
-                <a href="https://pedro-pam.github.io/desafio-jogo-memoria/" target="_blank"><img class="slidePortfolio" src="./assets/img/jogo-da-memoria.png" alt="Jogo da Memória"></a>
-                <a href="https://pedro-pam.github.io/piano-keyboard-js/" target="_blank"><img class="slidePortfolio" src="./assets/img/teclado-js.png" alt="Teclado JS"></a>
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Olá, meu nome é</h3>
+        <h1>Pedro Paulo de Almeida Marinho</h1>
+        <h3>Eu sou <span class="multiple-text">Frontend Developer</span></h3>
+        <p>
+          Tenho 25 anos, RJ - Brasil! 
+          Bem vindo ao meu site!
+        </p>
+        <div class="social-media">          
+          <a href="https://www.instagram.com/pedro_pam98/"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/pedropam/"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/Pedro-PAM"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+        <a
+          href="https://drive.google.com/file/d/1Yt8Zz7f13Q6gb6IRoTR5ZJEMhCJj3GHi/view?usp=sharing"
+          class="btn"
+          >Meu currículo</a
+        >
+      </div>
 
+      <div class="home-img">
+        <img src="./assets/img/foto1.jpeg" style="border-radius:36px;width:360px;height:360px;"alt="" />
+      </div>
+    </section>
 
-                <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
-                <button class="display-right" onclick="plusDivs(1)">&#10095;</button>
-            
-        </span>       
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="./assets/img/foto.jpeg" style="border-radius:30px;width:480px;height:480px;" alt="" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">Sobre <span>mim</span></h2>
+        <h3>Frontend Developer</h3>
+        <p>
+            Aprendi várias linguagens de programação back e front end em cursos e na instituição de ensino Cefet-RJ, como por exemplo: java, python, javascript, c#. Tenho noções básicas de PHP e MySQL. Desenvolvi minhas habilidades de comunicação em estágios e na área de vendas.
+        </p>
+        <a
+          href="https://www.linkedin.com/in/pedropam/"
+          class="btn"
+          target="_blank"
+          >Leia mais</a
+        >
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2 class="heading">Meus <span>serviços</span></h2>
+
+      <div class="service-container">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Desenvolvedor Web</h3>
+          <p>
+            Estou a disposição para vagas na área de desenvolvimento web com
+            habilidades em HTML, CSS, JavaScript, Bootstrap, também possuo
+            noções básicas de React e Angular.
+          </p>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-line-chart"></i>
+          <h3>Tradução</h3>
+          <p>
+            Tenho experiência como freelancer em tradução de documentos, vídeos, e áudios, de inglês e japonês para português.
+          </p>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-desktop"></i>
+          <h3>Outros conhecimentos</h3>
+          <p>
+            Possuo conhecimentos básicos nas linguagens, como Java, C#, Python e
+            SQL. E também conhecimentos básicos em Microsoft Power BI e Canvas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Meus <span>projetos</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="./assets/img/movimente-se.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Landing Page para o Instituto Movimenta-se (Freelancer)</h4>
+            <p>
+                Projeto de site para o Instituto Movimenta-se
+            </p>
+            <a
+              href="https://projeto-movimente-se.vercel.app/"
+              target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="./assets/img/yu-gi-oh.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Yu-Gi-Oh Online</h4>
+            <p>
+                Jogo de Yu-Gi-Oh Online desenvolvido com HTML, CSS e JavaScript.
+            </p>
+            <a href="https://pedro-pam.github.io/js-yugioh-assets/" target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
         
+      </div>
+    </section>
+
+    <section class="portfolio" id="certificados">
+        <h2 class="heading">Meus <span>Certificados</span></h2>
+        <div class="portfolio-container">
+          <div class="portfolio-box">
+            <img src="./assets/img/ifoodZeroDIO.jpg" alt="" />
+            <div class="portfolio-layer">
+              <h4>Potência Tech iFood - Programação do Zero</h4>
+              <p>
+                BootCamp com foco em JavaScript e fundamentos web
+              </p>
+              <a
+                href="https://www.dio.me/certificate/9078A583/share"
+                target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+  
+          <div class="portfolio-box">
+            <img src="./assets/img/FrontEndProz.jpg" alt="" />
+            <div class="portfolio-layer">
+              <h4>Introdução à Programação com Foco em Front-End</h4>
+              <p>
+                Introdução à Programação com Foco em Front-End
+              </p>
+              <a href="https://drive.google.com/file/d/1qQflFRpeaLCqOdQnKT2Whck7pJqXOFWh/view?usp=sharing" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="portfolio-box">
+            <img src="./assets/img/pythonDIO.jpg" alt="" />
+            <div class="portfolio-layer">
+              <h4>Santander Bootcamp 2023 - Ciência de Dados com Python</h4>
+              <p>
+                Bootcamp de 89 horas com foco em Python.
+              </p>
+              <a href="https://www.dio.me/certificate/B8C1C070/share" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="portfolio-box">
+            <img src="./assets/img/awscloud.jpeg" alt="" />
+            <div class="portfolio-layer">
+              <h4>AWS Certified Cloud Practitioner</h4>
+              <p>
+                Earners of this certification have a fundamental understanding of IT services and their uses in the AWS Cloud. They demonstrated cloud fluency and foundational AWS knowledge. Badge owners are able to identify essential AWS services necessary to set up AWS-focused projects.
+
+              </p>
+              <a href="https://www.credly.com/badges/b076c5ba-e94e-46ad-8f16-9d1cae81b543/linked_in_profile" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="portfolio-box">
+            <img src="./assets/img/jogosDIO.jpg" alt="" />
+            <div class="portfolio-layer">
+              <h4>Potência Tech iFood - Desenvolvimento de Jogos</h4>
+              <p>
+                Bootcamp de 77 horas com foco na utilização de Javascript, HTML e CSS para desenvolvimento de jogos.
+              </p>
+              <a href="https://www.dio.me/certificate/B8C1C070/share" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+  
+
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <h2 class="heading">Meus <span>contatos</span></h2>
+        <h3>
+          <span class="bold">E-mail:</span> pedropamrj@gmail.com
+        </h3>
+        <h3><span class="bold">WhatsApp:</span> (21) 985079293</h3>
+      </div>
+      <div class="fcf-form">
+        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            <label for="Name" class="fcf-label">Seu Nome</label>            
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Seu Endereço de E-mail</label>
+            <span class="helper" id="emailHelper">Por favor, insira um endereço de e-mail válido</span>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Sua Mensagem</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+        <div class="fcf-form-group">
+        <button type="submit" id="fcf-button" class="btn fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Enviar</button>
     </div>
-    <div class="contact">
-        <span class="contact-info">Entre em contado! Eu estou disponível nas seguintes redes:</span>
-        <ul class="contact-links">
-            <li><a href="https://www.linkedin.com/in/pedropam/" target="_blank">Meu Linkedin</a></li>
-            <li><a href="https://github.com/Pedro-PAM" target="_blank">GitHub</a></li>
-            <li><a href="https://www.instagram.com/pedro_pam98/" target="_blank">Instagram</a></li>
-        </ul>
     </div>
-    
-</body>
+    </section>
+
+    <div class="footer">  
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  </body>
 </html>
